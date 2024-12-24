@@ -11,6 +11,10 @@ class UserEntry(BaseModel):
     assunto: str
     mensagem: str
 
+@app.get("/")
+def read_root():
+    return {"message": "API funcionando corretamente!"}
+
 @app.post("/send_email")
 def send_emails(user_entry: UserEntry):
     user_data = user_entry.dict()
