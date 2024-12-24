@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from bot_api import disparar_emails
+from api.bot_api import disparar_emails
 
 app = FastAPI()
 
