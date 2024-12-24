@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Email Sending Bot</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center;">Email Sending Bot</h1>
+    <form action="/" method="POST">
+        <p>Email: </p>
+        <input type="text", name="email", id="email">
+        <p>Senha: </p>
+        <input type="text", name="senha", id="senha">
+        <p>Assunto: </p>
+        <input type="text", name="ass", id="ass">
+        <p>Mensagem: </p>
+        <input type="text", name="mensagem", id="mensagem">
+        <p>Digite a lista de emails (use virgula para separar): </p>
+        <input type="text", name="content", id="content">
+        <input type="submit", value="Send Email">
+    </form>
+</div>
+{% endblock %}

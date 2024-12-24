@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Email Sending Bot</title>
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1 style="text-align: center;">Emails were successfully sent to:</h1>
+    {% for email in email_list %}
+    <tr>
+        <td>{{ email }}</td>
+        <p></p>
+    </tr>
+    {% endfor %}
+    
+</div>
+{% endblock %}
