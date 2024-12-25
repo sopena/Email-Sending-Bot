@@ -21,7 +21,7 @@ def index():
             "assunto": assunto,
             "mensagem": mensagem
             }
-        result = requests.post(url=url, json=data)
+        requests.post(url=url, json=data)
         return render_template("send_email.html", email_list = email_list)
     else:
         return render_template("index.html")
